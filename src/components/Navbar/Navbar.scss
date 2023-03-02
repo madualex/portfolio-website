@@ -29,20 +29,28 @@
         &:hover {
             color: var(--secondary-color);
         }
+
+        @media screen and (max-width: 900px) {
+            display: flex;
+        }
+
     }
 
 //.app__navbar-logo img {}
 // The above is exactly the advantage that scss brings over css. In normal css, one would have had to write that commented line of code above so as to target the img tag for styling but with scss, it can be targetted directly like we have in the code below as though the img is like any other css property only that it would now have its own block of styling and even further styling like the responsiveness can be applied directly on it and so on. So, scss helps to reduce the lines of code for styling much more than one would normally have using vanilla css.
 
-    img {
-        width: 90px;
-        height: 20px;
+    // img {
+    //     width: 90px;
+    //     height: 20px;
 
-        @media screen and (min-width: 2000px) {
-            width: 180px;
-            height: 40px;
-        }
-    }
+    //     @media screen and (min-width: 2000px) {
+    //         width: 180px;
+    //         height: 40px;
+    //     }
+
+    // }
+
+    
 }
 
 .app__navbar-links {
@@ -90,7 +98,7 @@
         }
     }
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 899px) {
         display: none;
     }
 }
